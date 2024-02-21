@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package logoif;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel; 
+import javax.swing.SwingConstants;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
+public class LOGOIF Frame Extends JFrame{
+
+    private final JLabel logo
+    
+
+    public LOGOIF( ){
+        super ("Logo do IFMT") ;
+        setLayout ( new FlowLayout()   );                                
+        
+
+        Icon iflogo = new ImageIcon ("getClass(). getResource ( "iflogo.png" ));  
+        
+        logo = new JLabel (); 
+        logo.setText( "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE MATO GROSSO." ); 
+        logo.setIcon(iflogo);
+        logo.setHorizontalTextPosition ( SwingConstants.CENTER);
+        logo.setVerticalTextPosition ( SwingConstants.BOTTOM);
+        logo.setToolTipText( "essa é a logo IFMT" );
+        add (logo);
+    }
+}
